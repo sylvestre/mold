@@ -54,6 +54,7 @@ jobs:
       run: |
         export PATH="/usr/lib/ccache:/usr/local/opt/ccache/libexec:$PATH"
         make test -j$(sysctl -n hw.logicalcpu)
+
   coverage:
     runs-on: ubuntu-20.04
     steps:
